@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Terminal.css">
+    <link rel="stylesheet" href="CSS/Terminal_Btn.css">
+    <title>Assembler | Home</title>
+</head>
+<body>
+    <section>
+        <div id="Pos_Left"> <!-- To Pos the div left -->
+            <div class="buzz_wrapper">
+                <div class="text">
+                    <span><div id="msg"/></span>
+                </div>
+                <div class="scanline"></div>
+            </div>
+            <div class="buzz_wrapper1">
+                <div class="text1">
+                <span1><div id="msg1"/></span1>
+                </div>
+                <div class="scanline1"></div>
+                
+            </div>
+            <br/><br/><br/><br/>
+            <form action="PHP/BackEnd.php" method="post" onsubmit="return checkforblank"> <!-- Action form to connect THE PHP SERVER -->
+            <textarea name="Code" id="fname" rows="1" placeholder="Enter Assembly Code" spellcheck="false"></textarea>
+            <br><br><br>
+            <input type="submit" value="Generate"/> <!-- Button for generating Hex -->
+            </form>
+        </div>      
+    </section>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="JS/Terminal.js"></script>
+</body>
+</html>

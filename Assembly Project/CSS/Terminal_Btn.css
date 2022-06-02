@@ -1,0 +1,33 @@
+input[type=text]:focus,
+textarea:focus,
+input[type=submit]:focus,
+a.button:focus {
+	outline: 0;
+}
+
+input[type=submit],
+a.button {
+	background: transparent;
+	border: 1px solid #00dd00;
+	clear: both;
+	color: #00dd00;
+	cursor: hand;
+	display: inline-block;
+	font-family: 'VT323', Courier;
+	font-size: 1em;
+	margin-bottom: 20px;
+	opacity: 0.25;
+	padding: 10px 100px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	z-index: 10;
+    font-weight: bold;
+}
+
+input[type=submit]:hover,
+a.button:hover {
+	background: #008000;
+	color: #383838;
+	opacity: 0.8;
+}
